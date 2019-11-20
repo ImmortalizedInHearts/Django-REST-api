@@ -7,9 +7,8 @@ from todo.note_api import NoteSerializer
 
 @api_view(['GET', 'POST'])
 def todo_list(request):
-    """
-    List all code snippets, or create a new snippet.
-    """
+    print("hello")
+    print(request.method)
     if request.method == 'GET':
         note_list = Note.objects.order_by('created_at').reverse()
         serializer = NoteSerializer(note_list, many=True)
@@ -25,9 +24,7 @@ def todo_list(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def note_detail(request, pk):
-    """
-    Retrieve, update or delete a code snippet.
-    """
+
     try:
         note = Note.objects.get(pk=pk)
     except Note.DoesNotExist:

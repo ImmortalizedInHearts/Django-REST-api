@@ -17,6 +17,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+print("Test")
 urlpatterns = [
     url('^admin/', admin.site.urls),
     url('^api/v1/', include('todo.urls')),
