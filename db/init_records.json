@@ -1,0 +1,46 @@
+[{
+        "model": "todo.Note",
+        "pk": 1,
+        "fields": {
+            "text": "Hello,",
+            "created_at": "2019-06-17",
+            "is_done": true
+        }
+    },
+    {
+        "model": "todo.Note",
+        "pk": 2,
+        "fields": {
+            "text": "Denis,",
+            "created_at": "2018-06-17",
+            "is_done": false
+        }
+    },
+    {
+        "model": "todo.Note",
+        "pk": 3,
+        "fields": {
+            "text": "how",
+            "created_at": "2017-06-17",
+            "is_done": true
+        }
+    },
+    {
+        "model": "todo.Note",
+        "pk": 4,
+        "fields": {
+            "text": "are",
+            "created_at": "2016-06-17",
+            "is_done": false
+        }
+    },
+    {
+        "model": "todo.Note",
+        "pk": 5,
+        "fields": {
+            "text": "you?",
+            "created_at": "2015-06-17",
+            "is_done": true
+        }
+    }
+]
