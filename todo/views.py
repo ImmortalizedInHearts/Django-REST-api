@@ -7,7 +7,7 @@ from todo.note_api import NoteSerializer
 
 @api_view(['GET', 'POST'])
 def todo_list(request):
-    print("hello")
+    print("todo_list")
     print(request.method)
     if request.method == 'GET':
         note_list = Note.objects.order_by('created_at').reverse()
@@ -24,7 +24,8 @@ def todo_list(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def note_detail(request, pk):
-
+    print("note_detail")
+    print(request.method)
     try:
         note = Note.objects.get(pk=pk)
     except Note.DoesNotExist:

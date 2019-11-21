@@ -25,7 +25,7 @@ SECRET_KEY = '2x0rz3zb!t$zl(*i^6m^vclbr*629po!bo47lvxn^bt6(5h-u-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1', 'db']
+ALLOWED_HOSTS = ['*',]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
